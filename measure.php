@@ -86,6 +86,6 @@ class Measure
 
     private static function nanosecondsToHuman(int $nanoseconds): string
     {
-        return $nanoseconds/1e+6 . " milliseconds";
+        return round($nanoseconds/1e+6, 1) . " milliseconds";
     }
 }
